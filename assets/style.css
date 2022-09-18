@@ -1,0 +1,275 @@
+:root {
+  --header-height       : 160px;
+  --header-height-min   : 80px;
+}
+
+:root {
+  --accent-color       : #111;
+  --secondary-color    : #C5A992;
+  --dark-color         : #2f2f2f;
+  --grey-color         : #F8F8F8;
+  --heading-color      : #111;
+  --body-text-color    : #b0b0b0;
+  --light-heading-color   : #fff;
+  --light-background-color   : #fff;
+  --light-text-color   : #afafaf;
+  --bg-text-color      : #f1f1f1;
+  --dark-text-color    : #2f2f2f;
+}
+
+:root {
+  --body-font           : "Manrope", sans-serif;
+  --heading-font        : 'Montserrat', sans-serif;
+  --secondary-font      : "Playfair Display", Georgia, serif;
+}
+
+* {
+box-sizing: border-box;
+}
+
+html {
+box-sizing: border-box;
+}
+
+body {
+font-family: var(--body-font);
+font-size: 16px;
+line-height: 1.8;
+color: var(--body-text-color);
+}
+
+a {
+color: var(--accent-color);
+text-decoration:none;
+}
+
+img {
+display: inline-block;
+border: 0;
+max-width: 100%;
+height: auto;
+vertical-align: middle;
+}
+
+h3, h4 {
+  color: var(--accent-color);
+}
+
+.container {
+  max-width: 1220px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display:flex;
+  flex-wrap:wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.header-wrap {
+  position: absolute;
+  z-index: 999;
+  padding: 40px;
+
+}
+
+.title a {
+  font-size: 1.2em;
+  color: #fff;
+  font-weight: 600;
+}
+
+.title .header-text-small {
+  font-size: 1em;
+  color: #fff;
+  font-weight: 400;
+}
+
+.title .divider {
+  margin: -20px 0px;
+}
+
+.hero-section {
+  position: relative;
+  display: inline-block;
+}
+
+.hero-section img {
+  filter: brightness(40%);
+}
+
+.hero-section .hero-content {
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 30%;
+  text-align: center;
+  width: 60%;
+  max-width: 1220px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hero-section h1 {
+  font-size: 3.5em;
+  margin-bottom: -40px;
+  color: #fff;
+}
+
+.hero-section h2 {
+  font-size: 2em;
+  color: var(--body-text-color);
+  margin-bottom: 0px;
+}
+
+.hero-section,
+.hero-section a,
+.hero-section a:hover {
+  color: #fff
+}
+
+
+
+.layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.layout img {
+  max-width: 100%;
+  border-radius: 50px;
+  padding-left: 20px;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-media img {
+  height: 300px;
+  width: 500px;
+  object-fit: cover;
+  display: flex;
+  flex-basis: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+}
+
+.post-content {
+  padding-top: 30px;
+  padding-left: 20px;
+  margin-bottom: 100px;
+  margin-top: -30px;
+  text-align: center;
+}
+
+.section-header h3 {
+  font-size: 1.8em;
+  font-weight: 600;
+  line-height: 1.3em;
+  margin: 15px 0;
+}
+
+.section-header {
+  padding-top: 4em;
+  padding-bottom: 0.5em;
+  text-align: center;
+}
+
+.btn {
+display: inline-block;
+position: relative;
+border-radius: 20px;
+padding: 0.75em 1.5em;
+margin-top: 15px;
+font-size: 15px;
+font-weight: bold;
+line-height: normal;
+text-align: center;
+text-transform: uppercase;
+z-index: 1;
+cursor: pointer;
+vertical-align: middle;
+}
+
+.btn:hover,
+.btn:focus,
+input[type="button"]:focus,
+input[type="button"]:hover,
+button:focus,
+button:hover {
+text-decoration:double;
+text-decoration-color: var(--secondary-color);
+outline: 0;
+}
+
+.btn {
+background: var(--accent-color);
+color: #fff;
+}
+.btn:hover {
+background: #151515;
+color: rgb(136, 125, 73);
+}
+
+.contact {
+  flex: auto;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-top: -20px;
+}
+
+.contact h3 {
+  font-size: 1.5em;
+}
+
+.footer {
+  background-color: var(--accent-color);
+  display: flex;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.footer h6 {
+  margin-bottom: -5px;
+}
+
+@media only screen and (max-width: 768px) {
+.body {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+}
+
+@media screen and (max-width: 799px){
+#header .header-wrap {
+    padding: 40px 20px;
+}
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+      --header-height : 100px;
+      --header-height-min   : 80px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-section h1 {
+      font-size: 2em;
+  }
+  .hero-section .hero-content {
+      padding-top: 12em;
+      padding-bottom: 6em;
+      display: none;
+  }
+  }
